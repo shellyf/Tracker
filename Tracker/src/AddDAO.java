@@ -24,6 +24,9 @@ public class AddDAO {
 			st = con.createStatement();
 			rs = st.executeQuery(q);
 			while (rs.next()) {
+				//need to get this to work getting user table for 
+				//submitted by and assigned to. 
+				
 				// int tempTicketID = rs.getInt(2);
 				// int tempPrio = rs.getInt(0);
 				// String tempSummary = rs.getString(3);
@@ -31,7 +34,7 @@ public class AddDAO {
 				// AddDefect e = new AddDefect(tempSummary, tempPrio,
 				// tempSubmitter);
 				// arrayList.add(e);
-			
+
 			}
 			if (rs != null) {
 				rs.close();
@@ -80,16 +83,17 @@ public class AddDAO {
 		}
 
 	}
-	
+
 	public void returnUser(User i) {
 		makeConnection();
 
 		try {
 			String lastName = "Fry";
 			String firstName = "Shelly";
-			String q = "select userid from defect where last_name = '" + lastName + "' and first_name = '" + firstName + "';";
+			String q = "select userid from defect where last_name = '" + lastName + "' and first_name = '" + firstName
+					+ "';";
 			st = con.createStatement();
-			rs = st.executeQuery(q);	
+			rs = st.executeQuery(q);
 			System.out.println(q);
 			while (rs.next()) {
 				int tempUserID = rs.getInt(2);
