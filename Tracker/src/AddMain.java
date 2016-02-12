@@ -13,7 +13,7 @@ public class AddMain {
 		main.setSize(700, 400);
 		main.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		main.setVisible(true);
-		
+		//testing push to github
 	}
 
 }
