@@ -26,7 +26,7 @@ public class AddDAO {
 			while (rs.next()) {
 				//need to get this to work getting user table for 
 				//submitted by and assigned to. 
-				
+				//testing push to github
 				// int tempTicketID = rs.getInt(2);
 				// int tempPrio = rs.getInt(0);
 				// String tempSummary = rs.getString(3);
